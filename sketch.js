@@ -4,7 +4,7 @@
 
 // Variables declared outside of setup() and draw() are
 // accessible everywhere in the sketch (global scope).
-let controllerImg;
+let jengaImg;
 
 // ------------------------------------------------------------
 // preload()
@@ -15,7 +15,7 @@ let controllerImg;
 function preload() {
   // loadImage() takes a file path relative to index.html
   // The image is stored in the variable so we can use it later
-  controllerImg = loadImage("assets/images/controller.png");
+  jengaImg = loadImage("assets/images/jenga-history.jpg");
 }
 
 // ------------------------------------------------------------
@@ -30,7 +30,7 @@ function setup() {
 
   // background() fills the canvas with a colour
   // A single number = greyscale (0 is black, 255 is white)
-  background(200);
+  background(200, 80, 40);
 
   // ----------------------------------------------------------
   // SECTION 1: TEXT
@@ -60,7 +60,7 @@ function setup() {
   // image(img, x, y, width, height) draws a loaded image
   // x and y are the TOP-LEFT corner of the image
   // The last two arguments resize the image to fit that space
-  image(controllerImg, 50, 85, 300, 300);
+  image(jengaImg, 50, 85, 300, 300);
 
   // ----------------------------------------------------------
   // SECTION 3: DRAWING SHAPES (a controller made of shapes!)
@@ -148,7 +148,7 @@ function setup() {
   fill(180);
   textSize(13);
   textAlign(CENTER);
-  text("controller.png", originX - 150, originY + 295);
+  text("jenga-history.jpg", originX - 150, originY + 295);
   text("drawn with shapes", originX + 150, originY + 295);
 
   // --- Dividing line between the two controllers ---
