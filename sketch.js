@@ -50,8 +50,8 @@ function setup() {
   // width and height are built-in p5.js variables that
   // always hold the canvas width and height
   fill(180);
-  text("Image loaded from assets/images/", width / 4, 65);
-  text("Drawn using p5.js shapes", (width / 4) * 3, 65);
+  text("JENGA JENGA JENGA", width / 4, 65);
+  text("This is a JENGA Controller", (width / 4) * 3, 65);
 
   // ----------------------------------------------------------
   // SECTION 2: DISPLAYING AN IMAGE
